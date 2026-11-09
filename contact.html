@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,8 @@
         content="Apply to join Cloud Media Dynamics in Century City, Cape Town.">
 
   <title>Careers & Applications | Cloud Media Dynamics</title>
-  <link rel="icon" type="image/jpeg" href="assets/cloud media logo.jpg">
+
+  <link rel="icon" type="image/jpeg" href="assets/cloud%20media%20logo.jpg">
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -42,6 +44,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+
       <a class="nav-cta active-cta" href="contact.html">
         Careers / Apply <span>↗</span>
       </a>
@@ -143,14 +146,18 @@
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        enctype="multipart/form-data">
+        enctype="multipart/form-data"
+      >
 
-        <input type="hidden"
-               name="subject"
-               value="New Job Application - Cloud Media Dynamics">
+        <!-- Required Netlify form identification -->
+        <input
+          type="hidden"
+          name="form-name"
+          value="job-application"
+        >
 
         <!-- Spam protection -->
-        <div class="hidden-field">
+        <div hidden>
           <label>
             Leave this field empty:
             <input name="bot-field">
@@ -171,7 +178,8 @@
           id="first-name"
           name="first-name"
           placeholder="Enter your first name"
-          required>
+          required
+        >
 
         <label for="last-name">Last name</label>
 
@@ -180,7 +188,8 @@
           id="last-name"
           name="last-name"
           placeholder="Enter your surname"
-          required>
+          required
+        >
 
         <label for="email">Email address</label>
 
@@ -189,7 +198,8 @@
           id="email"
           name="email"
           placeholder="Enter your email address"
-          required>
+          required
+        >
 
         <label for="phone">Contact number</label>
 
@@ -198,7 +208,8 @@
           id="phone"
           name="phone"
           placeholder="+27..."
-          required>
+          required
+        >
 
         <label for="position">Position applying for</label>
 
@@ -207,7 +218,8 @@
           id="position"
           name="position"
           placeholder="Enter the position you're applying for"
-          required>
+          required
+        >
 
         <label for="cv">Upload your CV</label>
 
@@ -216,33 +228,41 @@
           id="cv"
           name="cv"
           accept=".pdf,.doc,.docx"
-          required>
+          required
+        >
 
-        <label for="message">Cover letter / Additional information</label>
+        <label for="message">
+          Cover letter / Additional information
+        </label>
 
         <textarea
           id="message"
           name="message"
           rows="5"
-          placeholder="Tell us a little about yourself and why you'd like to join Cloud Media."></textarea>
+          placeholder="Tell us a little about yourself and why you'd like to join Cloud Media."
+        ></textarea>
 
         <label class="consent-label">
+
           <input
             type="checkbox"
             name="privacy-consent"
             value="Accepted"
-            required>
+            required
+          >
 
           <span>
             I consent to Cloud Media Dynamics using
             my information to assess my application
             and contact me regarding recruitment.
           </span>
+
         </label>
 
         <button
           class="button button-primary form-submit"
-          type="submit">
+          type="submit"
+        >
 
           Submit application <span>→</span>
 
@@ -266,23 +286,29 @@
   <div class="container footer-main">
 
     <div>
+
       <a class="brand logo-brand footer-brand" href="index.html">
         <img src="assets/cloud%20media%20logo.jpg"
              alt="Cloud Media Dynamics Logo">
       </a>
 
       <p>Telecommunications. Sales. Opportunities.</p>
+
     </div>
 
     <div class="footer-nav">
+
       <span class="footer-label">EXPLORE</span>
+
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Careers / Apply</a>
+
     </div>
 
     <div class="footer-nav">
+
       <span class="footer-label">CONTACT DETAILS</span>
 
       <a href="mailto:cloudmedia.recruitment@outlook.com">
@@ -295,6 +321,7 @@
 
       <span>Century City, Cape Town</span>
       <span>South Africa</span>
+
     </div>
 
   </div>
